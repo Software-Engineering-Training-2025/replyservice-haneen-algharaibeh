@@ -2,20 +2,22 @@ package org.example;
 
 public class ReplyService {
 
-    // Enum for reply type
+
+    public String reply(String input, org.example.ReplyType type) {
+    }
+
     public enum ReplyType { FORMAL, FRIENDLY, CONCISE }
 
-    // The required method
+
     public String reply(String message, ReplyType type) {
-        // 1. Input handling
+
         if (message == null || message.trim().isEmpty()) {
             return "Please say something.";
         }
 
-        // Normalize input
-        String input = message.trim().toLowerCase();
 
-        // 2. Message Matching
+
+        String input = message.trim().toLowerCase();
         switch (input) {
             case "hi":
             case "hello":
