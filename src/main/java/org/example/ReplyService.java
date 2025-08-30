@@ -10,6 +10,7 @@ public class ReplyService {
 
     public String reply(String message, ReplyType type) {
 
+
         if (message == null || message.trim().isEmpty()) {
             return "Please say something.";
         }
