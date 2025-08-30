@@ -3,8 +3,7 @@ package org.example;
 public class ReplyService {
 
 
-    public String reply(String input, org.example.ReplyType type) {
-    }
+
 
     public enum ReplyType { FORMAL, FRIENDLY, CONCISE }
 
